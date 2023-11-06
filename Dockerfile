@@ -7,6 +7,6 @@ COPY . /app
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-RUN pytest tests
+RUN pytest app/tests
 
 CMD ["python", "app.py"]
